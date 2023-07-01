@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main"> 
+       <input type="number" id="hours" min="0" max="100" value="" placeholder="00">
+       <label for="hours">Hours</label>
+       <input type="number" id="minutes" min="0" max="60" value="" placeholder="00"> 
+       <label for="minutes">Minutes</label>
+       <input type="number" id="seconds" min="0" max="60" value="" placeholder="00">
+       <label for="seconds">Seconds</label>
+       <button id="enterBtn">Enter</button>
+       <button id="clearBtn">Clear</button>
+    </select>
+    </div>
+    <div class="clockBox" id="clockBox">
+        <div id="display">
+            00 :: 00 :: 00
+        </div>
+        <div class="buttons">
+            <button id="start">Start</button>
+        <button id="reset">Reset</button>
+        </div>
+    </div>
+</body>
+<script src="Script.js"></script>
+</html>

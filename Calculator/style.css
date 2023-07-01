@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+body {
+  background: linear-gradient(45deg, lime, rgb(59, 164, 229));
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+*{
+    font-family: 'Patrick Hand', cursive;
+}
+#num {
+  height: 2em;
+  width: 2em;
+  border-radius: 25px;
+  margin: 5px;
+  font-size: 3em;
+  border: none;
+  box-shadow: 0px 5px 3px rgb(136, 55, 222);
+  cursor: pointer;
+}
+#display {
+  width: 10em;
+  border: none;
+  background-color: transparent;
+  text-overflow: initial;
+  font-size: 3em;
+  height: 1.2em;
+  text-align: right;
+  height: 2em;
+}
+
+#equals {
+  height: 2em;
+  width: 4.2em;
+  border-radius: 25px;
+  margin: 5px;
+  font-size: 3em;
+  border: none;
+  box-shadow: inset -2px black;
+  cursor: pointer;
+}
+#num:hover,#equals:hover{
+  box-shadow: inset 1px 0px 1px 1px black;
+}
+.container {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: rgb(119, 218, 227);
+}
+button {
+  background-color: rgb(169, 80, 213);
+}
+.acBtn {
+  background-color: rgb(255, 46, 46);
+}
+.deBtn {
+  background-color: greenyellow;
+}
+
+@media (max-width:600px){
+  #num{
+    height: 1.5em;
+    width: 1.5em;
+    font-size: 2em;
+  }
+  #equals{
+    height: 1.5em;
+    width: 3.4em;
+    font-size: 2em;
+  }
+  #display{
+    width: 9em;
+    font-size: 2em;
+  }
+}

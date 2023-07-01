@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+    <script>var running=false;</script>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+           <input id="display" type="text" name="display" placeholder="0">
+            <div class="buttonsR">
+                <button id="num" onclick="displayAdder('')"class="onBtn" style="background-color: green;">ON</button>
+                <button id="num" onclick="displayAdder('(')">(</button>
+                <button id="num" onclick="displayAdder(')')">)</button>
+                <button id="num" class="deBtn">DE</button>
+                <button id="num" onclick="displayAdder('')", class="acBtn">AC</button>
+            </div>
+            <div class="buttonsR">
+                <button id="num" onclick="displayAdder('7')">7</button>
+                <button id="num" onclick="displayAdder(8)">8</button>
+                <button id="num" onclick="displayAdder(9)">9</button>
+                <button id="num" onclick="displayAdder('%')">R</button>
+                <button id="num" onclick="displayAdder('**')">^</button>
+            </div>
+            <div class="buttonsR">
+                <button id="num" onclick="displayAdder(4)">4</button>
+                <button id="num" onclick="displayAdder(5)">5</button>
+                <button id="num" onclick="displayAdder(6)">6</button>
+                <button id="num" onclick="displayAdder('-')">-</button>
+                <button id="num" onclick="displayAdder('*')">*</button>
+            </div>
+            <div class="buttonsR">
+                <button id="num" onclick="displayAdder(1)">1</button>
+                <button id="num" onclick="displayAdder(2)">2</button>
+                <button id="num" onclick="displayAdder(3)">3</button>
+                <button id="num" onclick="displayAdder('+')">+</button>
+                <button id="num" onclick="displayAdder('/')">/</button>
+            </div>
+            <div class="buttonsR">
+                <button id="num" onclick="displayAdder('0')">0</button>
+                <button id="num" onclick="displayAdder('00')">00</button>
+                <button id="num" onclick="displayAdder('.')">.</button>
+                <button id="equals" >=</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
