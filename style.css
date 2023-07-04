@@ -12,9 +12,7 @@
 .text-blue{
     --text-color:rgb(26, 165, 221);
 }
-.text-pink{
-    --text-color:rgb(255, 166, 181);
-}
+
 .text-yellow{
     --text-color:yellow;
 }
@@ -24,7 +22,6 @@
 .text-purple{
     --text-color:rgb(216, 42, 216);
 }
-
 *{
     padding: 0px;
     margin: 0px;
@@ -179,7 +176,7 @@ display: flex;
 justify-content: center;
 gap: 1.5em;
 }
-.sideNav,.themeBtn{
+.sideNav,.themeSelectors{
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
     border-radius: 25px;
@@ -198,6 +195,28 @@ gap: 1.5em;
     color: var(--text-color);
     scale: 2;
     transition: 0.25s ease-in-out;
+}
+.limeTheme,.redTheme,.yellowTheme,.purpleTheme,.blueTheme{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.footerThemeColor{
+    display: flex;
+    flex-direction: row;
+    gap: 0.7em;
+    justify-content: center;
+    align-items: center;
+}
+.footerThemeSelector{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3em;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    display: none;
 }
 @media (max-width:600px){
     .sidebar{
@@ -238,5 +257,8 @@ gap: 1.5em;
         display: grid;
         grid-template-columns: repeat(1,auto);
         grid-gap: 1em;
+    }
+    .footerThemeSelector{
+        display: flex;
     }
 }
