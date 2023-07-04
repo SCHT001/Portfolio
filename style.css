@@ -1,5 +1,29 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Raleway:wght@200&display=swap');
+:root{
+    --primary-color:black;
+    --secondary-color:white;
+    --text-color:limegreen;
+}
+.light-theme{
+    --primary-color:white;
+    --secondary-color:black;
+}
+.text-blue{
+    --text-color:rgb(26, 165, 221);
+}
+.text-pink{
+    --text-color:rgb(255, 166, 181);
+}
+.text-yellow{
+    --text-color:yellow;
+}
+.text-red{
+    --text-color:rgb(239, 58, 58);
+}
+.text-purple{
+    --text-color:rgb(216, 42, 216);
+}
 
 *{
     padding: 0px;
@@ -9,8 +33,8 @@
 }
 body{
     height: 100vh;
-    background-color: black;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 .main{
     display: flex;
@@ -18,13 +42,13 @@ body{
     flex-direction: row;
 }
 .sidebar,.mainBox{
-    border:1px solid black;
+    border:1px solid var(--primary-color);
 }
 .sidebar{
     width: 10%;
     height: 100vh;
     position: fixed;
-   background-color: black;
+   background-color: var(--primary-color);
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -55,12 +79,12 @@ body{
 }
 .bottomText{
     font-size: 20px!important;
-    color: white;
+    color: var(--primary-color);
     line-height: 1px;
     
 }
 .limeText{
-    color: limegreen;
+    color: var(--text-color);
     font-weight: 300;
     
 }
@@ -72,7 +96,7 @@ body{
 .topics:hover{
     background-color: rgb(69, 69, 69);
     border: none;
-    color: white;
+    color: var(--secondary-color);
     transition: 0.25s ease-in-out;
 }
 .about{
@@ -95,7 +119,7 @@ body{
 .skills ul li {
     display: flex;
     flex-direction: column;
-    border: 2px solid limegreen;
+    border: 2px solid var(--text-color);
     width: 5em;
     padding: 20px;
     border-radius: 100px;
@@ -112,14 +136,14 @@ body{
 }
 a{
     text-decoration: none;
-    color: white;
+    color: var(--secondary-color);
 }
 .topics a{
-    color: limegreen;
+    color: var(--text-color);
 }
 input{
     background-color:transparent;
-    color: white;
+    color: var(--secondary-color);
     border: none;
     font-size: 1.2em;
 }
@@ -138,15 +162,15 @@ label{
     border-radius: 25px;
     font-size: large;
     background-color: transparent;
-    color: limegreen;
-    border:1px solid limegreen;
+    color: var(--text-color);
+    border:1px solid var(--text-color);
     margin-top: 10px;
     cursor: pointer;
 }
 .submitBtn:hover{
-    background-color: limegreen;
+    background-color: var(--text-color);
     border: none;
-    color: white;
+    color: var(--secondary-color);
     transition: 0.25s ease-in-out;
 }
 .icons{
@@ -156,8 +180,8 @@ justify-content: center;
 gap: 1.5em;
 }
 .sideNav,.themeBtn{
-    border: 1px solid white;
-    color: white;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
     border-radius: 25px;
     padding: 20px;
     display: flex;
@@ -166,12 +190,12 @@ gap: 1.5em;
 
 }
 .sideNav a :hover{
-    color: limegreen;
+    color: var(--text-color);
     transition: 0.25s ease-in-out;
     scale: 2;
 }
 .icons i:hover{
-    color: limegreen;
+    color: var(--text-color);
     scale: 2;
     transition: 0.25s ease-in-out;
 }
@@ -203,7 +227,7 @@ gap: 1.5em;
     }
     input{
         background-color:transparent;
-        color: white;
+        color: var(--secondary-color);
         border: none;
         font-size: 1.2em;
     }
