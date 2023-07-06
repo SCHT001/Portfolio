@@ -59,7 +59,7 @@ body{
     flex-direction: column;
 }
 
-.intro,.about,.skills,.footer,.projectsList,.contact{
+.intro,.about,.skills,.footer,.education,.projectsList,.contact{
     padding-left: 20%;
     padding-right: 20%;
     margin-top: 5em;
@@ -116,7 +116,7 @@ body{
 .skills ul li {
     display: flex;
     flex-direction: column;
-    border: 2px solid var(--text-color);
+   border-right:2px solid var(--text-color) ;
     width: 5em;
     padding: 20px;
     border-radius: 100px;
@@ -218,6 +218,22 @@ gap: 1.5em;
     padding-top: 20px;
     display: none;
 }
+.eduList{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.eduSideDiv,.eduMainDiv,.eduThirdDiv{
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+}
+.eduSideDiv div,.eduMainDiv div,.eduThirdDiv div{
+    border-radius: 25px;
+    border: 1px solid var(--text-color);
+    padding: 10px;
+    text-align: center;
+}
 @media (max-width:600px){
     .sidebar{
         width: 0px;
@@ -267,5 +283,30 @@ gap: 1.5em;
     .skillsList ul{
         align-items: center;
         justify-content: center;
+    }
+    .education{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .eduList{
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    }
+    .eduSideDiv,.eduMainDiv,.eduThirdDiv{
+       display: flex;
+       flex-direction: column;
+       gap: 2em;
+    }
+    .eduSideDiv div,.eduMainDiv div,.eduThirdDiv div{
+        border-radius: 25px;
+        border: 1px solid var(--text-color);
+        padding: 10px;
+        text-align: center;
+    }
+    .eduSideDiv div{
+        padding: 15px 10px;
+        
     }
 }
