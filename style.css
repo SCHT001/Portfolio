@@ -6,7 +6,7 @@
     --text-color:limegreen;
 }
 .light-theme{
-    --primary-color:white;
+    --primary-color:rgb(231, 223, 223);
     --secondary-color:black;
 }
 .text-blue{
@@ -260,5 +260,12 @@ gap: 1.5em;
     }
     .footerThemeSelector{
         display: flex;
+    }
+    .expPanel,.explanation{
+        padding: 0 30px;
+    }
+    .skillsList ul{
+        align-items: center;
+        justify-content: center;
     }
 }
