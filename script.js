@@ -13,7 +13,7 @@ colors.forEach((color) => {
 });
 var themeBtn=document.querySelectorAll('.themeBtn');
 themeBtn.forEach((btn)=>{
-    btn.addEventListener('click',()=>{
+    btn.addEventListener('click',()=>{ i
         if(theme=="dark"){
                     theme="light";
                     themeBtn.innerHTML=`<i class="fas fa-moon"></i>`;
