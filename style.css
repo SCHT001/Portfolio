@@ -235,6 +235,9 @@ gap: 1.5em;
     padding: 10px;
     text-align: center;
 }
+.themeBtn{
+    cursor: pointer;
+}
 @media (max-width:600px){
     .sidebar{
         width: 0px;
