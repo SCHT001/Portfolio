@@ -117,14 +117,18 @@ body{
 .skills ul li {
     display: flex;
     flex-direction: column;
-   border-right:2px solid var(--text-color) ;
+    box-shadow: 1px 1px 0px var(--text-color),-1px -1px 0px var(--text-color);
     width: 5em;
     padding: 20px;
-    border-radius: 100px;
+    border-radius: 10px;
     align-items: center;
     justify-content: center;
     height: 8em;
     
+}
+.skills ul li:hover{
+    /* transform: translateY(-50px) ; */
+    animation: bobbleAnimation 0.15s infinite ;
 }
 .skills ul li i{
     font-size: 5em;
@@ -237,6 +241,12 @@ gap: 1.5em;
 }
 .themeBtn{
     cursor: pointer;
+}
+@keyframes bobbleAnimation{
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-5px);}
+    100% {transform: translateY(0px);}
+
 }
 @media (max-width:600px){
     .sidebar{
