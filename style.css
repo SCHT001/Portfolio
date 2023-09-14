@@ -8,6 +8,10 @@
 .light-theme{
     --primary-color:rgb(231, 223, 223);
     --secondary-color:black;
+    transition: 0.2s ease-in-out;
+}
+.dark-theme{
+    transition: 0.2s ease-in-out;
 }
 .text-blue{
     --text-color:rgb(26, 165, 221);
@@ -38,9 +42,7 @@ body{
     justify-content: space-between;
     flex-direction: row;
 }
-.sidebar,.mainBox{
-    border:1px solid var(--primary-color);
-}
+
 .sidebar{
     width: 10%;
     height: 100vh;
@@ -242,6 +244,12 @@ gap: 1.5em;
 .themeBtn{
     cursor: pointer;
 }
+
+.active{
+    transform: scale(1.4);
+    transition: 0.2s ease-in-out;
+}
+
 @keyframes bobbleAnimation{
     0% {transform: translateY(0px);}
     50% {transform: translateY(-5px);}
