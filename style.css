@@ -94,7 +94,7 @@ body{
      font-weight: bold;
 }
 .topics:hover{
-    background-color: rgb(69, 69, 69);
+    background-color: var(--text-color);
     border: none;
     color: var(--secondary-color);
     transition: 0.25s ease-in-out;
@@ -131,19 +131,22 @@ body{
 .skills ul li:hover{
     /* transform: translateY(-50px) ; */
     animation: bobbleAnimation 0.15s infinite ;
+    background-color: var(--text-color);
 }
 .skills ul li i{
     font-size: 5em;
 }
 .projectBox{
   padding: 50px 20% 20px 20%;
+  color: var(--secondary-color);
 }
+
 a{
     text-decoration: none;
     color: var(--secondary-color);
 }
 .topics a{
-    color: var(--text-color);
+    color: var(--secondary-color);
 }
 input{
     background-color:transparent;
@@ -183,21 +186,8 @@ display: flex;
 justify-content: center;
 gap: 1.5em;
 }
-.sideNav,.themeSelectors{
-    border: 1px solid var(--secondary-color);
-    color: var(--secondary-color);
-    border-radius: 25px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
 
-}
-.sideNav a :hover{
-    color: var(--text-color);
-    transition: 0.25s ease-in-out;
-    scale: 2;
-}
+
 .icons i:hover{
     color: var(--text-color);
     scale: 2;
@@ -248,6 +238,54 @@ gap: 1.5em;
 .active{
     transform: scale(1.4);
     transition: 0.2s ease-in-out;
+}
+.sideBars ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+    
+}
+.sideBars ul li{
+    border: 2px solid var(--text-color);
+    border-radius: 25px;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    z-index: 3;
+}
+.sideBars ul li i{
+    position: absolute;
+    padding:10px 5px 10px 5px;
+    right: 5em;
+    bottom: 1.5em;
+    z-index: -2;
+    border: 2px solid var(--primary-color);
+    background-color:var(--primary-color);
+    border-radius: 0 0 50% 50%;
+
+}
+.sideBars ul li:hover{
+
+    background-color: var(--text-color);
+    transition: 0.25s ease-in-out;
+
+}
+.themeColor ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 1em;
+    margin-top: 3em;
+    border: 2px solid var(--text-color);
+    padding: 20px;
+    border-radius: 25px ;
+}
+hr{
+    height: 1.5px!important;
+    background-color: var(--secondary-color);
+    box-shadow: none;
 }
 
 @keyframes bobbleAnimation{
