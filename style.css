@@ -1,6 +1,7 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Raleway:wght@200&display=swap');
-:root{
+
+  :root{
     --primary-color:black;
     --secondary-color:white;
     --text-color:limegreen;
@@ -287,7 +288,43 @@ hr{
     background-color: var(--secondary-color);
     box-shadow: none;
 }
+.skill1,.skill2,.skill3,.skill4{
+    background:conic-gradient(rgb(255, 0, 0) 288deg, rgb(199, 186, 186) 0deg);
+    height: 10em;
+    width: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.skill2{
+    background:conic-gradient(rgb(255, 217, 1) 252deg, rgb(199, 186, 186) 0deg);
+}
+.skill3{
+    background:conic-gradient(rgb(2, 196, 255) 288deg, rgb(199, 186, 186) 0deg);
+}
+.skillsBase{
+    text-align: center;
+    margin-top: 3em;
+}
+.skillsCenter{
+    text-align: center;
+    font-size: larger;
+}
 
+.skillLogoContainer{
+    height: 9em;
+    width: 9em;
+    background-color: var(--primary-color);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skillsBox{
+    margin-top:7em;
+}
 @keyframes bobbleAnimation{
     0% {transform: translateY(0px);}
     50% {transform: translateY(-5px);}
@@ -304,8 +341,10 @@ hr{
         width: 100%;
       margin-left: 0px;
     }
-    .skillsList ul{
-        grid-template-columns: repeat(2,auto);
+    .skillsBox{
+        display: grid!important;
+        grid-template-columns: repeat(2,auto)!important;
+        gap: 3em;
     }
    
     body{
@@ -340,10 +379,7 @@ hr{
     .expPanel,.explanation{
         padding: 0 30px;
     }
-    .skillsList ul{
-        align-items: center;
-        justify-content: center;
-    }
+   
     .education{
         padding-left: 0px;
         padding-right: 0px;
