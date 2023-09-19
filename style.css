@@ -55,7 +55,7 @@ body{
    justify-content: center;
 }
 .mainBox{
-    width: 90%;
+    width: 80%;
     height: 100vh;
     margin-left: 15%;
     display: flex;
