@@ -32,6 +32,7 @@
     margin: 0px;
     font-family: nunito sans;
     scroll-behavior: smooth;
+    font-weight: bolder;
 }
 body{
     height: 100vh;
@@ -298,6 +299,11 @@ hr{
 .skillsBox{
     margin-top:7em;
 }
+input[type="number"] {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
 @media (max-width:600px){
     .sidebar{
         width: 0px;
