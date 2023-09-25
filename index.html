@@ -1,457 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sachet Subedi</title>
-    <link rel="icon" href="Images/Logo_v1.1.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="text-lime dark-theme" id="htmlBody">
-    <div class="main">
-      <div class="sidebar">
-        <div class="sideBars">
-          <ul>
-            <a href="#introId"
-              ><li>Home <i class="fas fa-home fa-sm"></i></li
-            ></a>
-            <a href="#aboutId">
-              <li>About <i class="fas fa-user fa-sm"></i></li
-            ></a>
-            <a href="#skillsId">
-              <li>Skills <i class="fas fa-code fa-sm"></i></li
-            ></a>
-            <a href="#projectId"
-              ><li>Projects <i class="fas fa-briefcase fa-sm"></i></li
-            ></a>
-            <a href="#contactId">
-              <li>Contact <i class="fas fa-phone fa-sm"></i></li
-            ></a>
-          </ul>
-        </div>
-        <div class="themeColor">
-          <ul>
-            <li>
-              <div class="themeBtn" id="themeToggle">
-                <i class="fas fa-sun"></i>
-              </div>
-            </li>
-            <li>
-              <div
-                class="limeTheme colorSets active"
-                data-color="limegreen"
-                style="background-color: limegreen"
-              ></div>
-              <br />
-            </li>
-            <li>
-              <div
-                class="redTheme colorSets"
-                data-color="red"
-                style="background-color: rgb(239, 58, 58)"
-              ></div>
-              <br />
-            </li>
-            <li>
-              <div
-                class="yellowTheme colorSets"
-                data-color="yellow"
-                style="background-color: yellow"
-              ></div>
-              <br />
-            </li>
-            <li>
-              <div
-                class="purpleTheme colorSets"
-                data-color="purple"
-                style="background-color: rgb(216, 42, 216)"
-              ></div>
-              <br />
-            </li>
-            <li>
-              <div
-                class="blueTheme colorSets"
-                data-color="blue"
-                style="background-color: rgb(26, 165, 221)"
-              ></div>
-              <br />
-            </li>
-          </ul>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sachet Subedi</title>
+  <link rel="icon" href="Images/Logo_v1.1.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="text-lime dark-theme" id="htmlBody">
+  <div class="main">
+    <div class="sidebar">
+      <div class="sideBars">
+        <ul>
+          <a href="#introId">
+            <li>Home <i class="fas fa-home fa-sm"></i></li>
+          </a>
+          <a href="#aboutId">
+            <li>About <i class="fas fa-user fa-sm"></i></li>
+          </a>
+          <a href="#skillsId">
+            <li>Skills <i class="fas fa-code fa-sm"></i></li>
+          </a>
+          <a href="#projectId">
+            <li>Projects <i class="fas fa-briefcase fa-sm"></i></li>
+          </a>
+          <a href="#contactId">
+            <li>Contact <i class="fas fa-phone fa-sm"></i></li>
+          </a>
+        </ul>
+      </div>
+      <div class="themeColor">
+        <ul>
+          <li>
+            <div class="themeBtn" id="themeToggle">
+              <i class="fas fa-sun"></i>
+            </div>
+          </li>
+          <li>
+            <div class="limeTheme colorSets active" data-color="limegreen" style="background-color: limegreen"></div>
+            <br />
+          </li>
+          <li>
+            <div class="redTheme colorSets" data-color="red" style="background-color: rgb(239, 58, 58)"></div>
+            <br />
+          </li>
+          <li>
+            <div class="yellowTheme colorSets" data-color="yellow" style="background-color: yellow"></div>
+            <br />
+          </li>
+          <li>
+            <div class="purpleTheme colorSets" data-color="purple" style="background-color: rgb(216, 42, 216)"></div>
+            <br />
+          </li>
+          <li>
+            <div class="blueTheme colorSets" data-color="blue" style="background-color: rgb(26, 165, 221)"></div>
+            <br />
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="mainBox" style="padding: 10px">
-      <br />
-      <br />
-      <br />
-      <div
-        style="
+  </div>
+  <div class="mainBox" style="padding: 10px">
+    <br />
+    <br />
+    <br />
+    <div style="
           font-size: 4em;
           font-family: 'Raleway', sans-serif;
           text-align: center;
-        "
-      >
-        HI From
-        <span style="color: var(--text-color); font-size: 1.3em">Sachet</span>.
+        ">
+      HI From
+      <span style="color: var(--text-color); font-size: 1.3em">Sachet</span>.
+      <br />
+      <span style="font-family: raleway">Designer and Developer</span>
+    </div>
+
+    <!-- Intro -->
+    <div class="intro" id="introId">
+      <span class="topics"><i class="fas fa-home fa-xs"></i> INTRODUCE</span>
+      <div style="margin-top: 30px; text-align: center">
+        I design and code beautifully simple things and i love what i do.
         <br />
-        <span style="font-family: raleway">Designer and Developer</span>
+        Just simple like that!
       </div>
-
-      <!-- Intro -->
-      <div class="intro" id="introId">
-        <span class="topics"><i class="fas fa-home fa-xs"></i> INTRODUCE</span>
-        <div style="margin-top: 30px; text-align: center">
-          I design and code beautifully simple things and i love what i do.
-          <br />
-          Just simple like that!
+      <div class="expPanel">
+        <div class="experience">
+          <span class="expSpans" style="font-size: 5em; color: var(--text-color)">1+</span>
+          <span>Years of <br />
+            experience</span>
         </div>
-        <div class="expPanel">
-          <div class="experience">
-            <span
-              class="expSpans"
-              style="font-size: 5em; color: var(--text-color)"
-              >1+</span
-            >
-            <span
-              >Years of <br />
-              experience</span
-            >
-          </div>
-          <div class="projects">
-            <span
-              class="expSpans"
-              style="font-size: 5em; color: var(--text-color)"
-              >20+</span
-            >
-            <span>
-              Projects <br />
-              Completed</span
-            >
-          </div>
-          <div class="clients">
-            <span
-              class="expSpans"
-              style="font-size: 5em; color: var(--text-color)"
-              >0+</span
-            >
-            <span
-              >Clients <br />
-              satisfied</span
-            >
-          </div>
+        <div class="projects">
+          <span class="expSpans" style="font-size: 5em; color: var(--text-color)">20+</span>
+          <span>
+            Projects <br />
+            Completed</span>
+        </div>
+        <div class="clients">
+          <span class="expSpans" style="font-size: 5em; color: var(--text-color)">0+</span>
+          <span>Clients <br />
+            satisfied</span>
         </div>
       </div>
-      <!-- about -->
+    </div>
+    <!-- about -->
 
-      <div class="about" id="aboutId">
-        <hr style="margin-bottom: 50px" />
-        <span class="topics"><i class="fas fa-user fa-xs"></i> ABOUT</span>
-        <div class="explanation">
-          <span style="font-size: 2em"
-            >I am
-            <span style="color: var(--text-color)">Sachet Subedi </span>,</span
-          >
-          <br />
-          <br />
-          I am an experienced software developer with a strong programming
-          background and a track record of delivering high-quality software
-          solutions. With over a year of freelance experience, I possess
-          proficiency in various frameworks and architectures. I am dedicated to
-          continuous learning and growth, seeking new opportunities to expand my
-          skills and contribute to the development and maintenance of innovative
-          software applications.
+    <div class="about" id="aboutId">
+      <hr style="margin-bottom: 50px" />
+      <span class="topics"><i class="fas fa-user fa-xs"></i> ABOUT</span>
+      <div class="explanation">
+        <span style="font-size: 2em">I am
+          <span style="color: var(--text-color)">Sachet Subedi </span>,</span>
+        <br />
+        <br />
+        I am an experienced software developer with a strong programming
+        background and a track record of delivering high-quality software
+        solutions. With over a year of freelance experience, I possess
+        proficiency in various frameworks and architectures. I am dedicated to
+        continuous learning and growth, seeking new opportunities to expand my
+        skills and contribute to the development and maintenance of innovative
+        software applications.
+      </div>
+    </div>
+
+    <div class="skills" id="skillsId">
+      <hr style="margin-bottom: 50px" />
+      <span class="topics"><i class="fa-solid fa-code fa-xs"></i> SKILLS</span>
+
+      <div class="skillsBox" style="display: flex; justify-content: space-between">
+        <div>
+          <div class="skill1">
+            <div class="skillLogoContainer">
+              <h5 class="skillsCenter">80%</h5>
+            </div>
+          </div>
+
+          <h5 class="skillsBase">HTML CSS</h5>
+        </div>
+        <div>
+          <div class="skill2">
+            <div class="skillLogoContainer">
+              <h5 class="skillsCenter">70%</h5>
+            </div>
+          </div>
+          <h5 class="skillsBase">JavaScript</h5>
+        </div>
+        <div>
+          <div class="skill3">
+            <div class="skillLogoContainer">
+              <h5 class="skillsCenter">80%</h5>
+            </div>
+          </div>
+          <h5 class="skillsBase">C/C++</h5>
+        </div>
+        <div>
+          <div class="skill4">
+            <div class="skillLogoContainer"></div>
+          </div>
+          <h5 class="skillsBase"></h5>
         </div>
       </div>
-
-      <div class="skills" id="skillsId">
-        <hr style="margin-bottom: 50px" />
-        <span class="topics"
-          ><i class="fa-solid fa-code fa-xs"></i> SKILLS</span
-        >
-
-        <div
-          class="skillsBox"
-          style="display: flex; justify-content: space-between"
-        >
-          <div>
-            <div class="skill1">
-              <div class="skillLogoContainer">
-                <h5 class="skillsCenter">80%</h5>
-              </div>
-            </div>
-
-            <h5 class="skillsBase">HTML CSS</h5>
-          </div>
-          <div>
-            <div class="skill2">
-              <div class="skillLogoContainer">
-                <h5 class="skillsCenter">70%</h5>
-              </div>
-            </div>
-            <h5 class="skillsBase">JavaScript</h5>
-          </div>
-          <div>
-            <div class="skill3">
-              <div class="skillLogoContainer">
-                <h5 class="skillsCenter">80%</h5>
-              </div>
-            </div>
-            <h5 class="skillsBase">C/C++</h5>
-          </div>
-          <div>
-            <div class="skill4">
-              <div class="skillLogoContainer"></div>
-            </div>
-            <h5 class="skillsBase"></h5>
-          </div>
-        </div>
-        <div class="eduBox"></div>
-      </div>
-      <!-- Projects -->
-      <div class="projectsList" id="projectId">
-        <hr style="margin-bottom: 50px" />
-        <div style="display: flex; justify-content: space-between">
-          <span class="topics"
-            ><i class="fas fa-briefcase fa-xs"></i> Projects</span
-          >
-          <span class="topics"
-            ><a
-              href="projects.html"
-              style="
+      <div class="eduBox"></div>
+    </div>
+    <!-- Projects -->
+    <div class="projectsList" id="projectId">
+      <hr style="margin-bottom: 50px" />
+      <div style="display: flex; justify-content: space-between">
+        <span class="topics"><i class="fas fa-briefcase fa-xs"></i> Projects</span>
+        <span class="topics"><a href="https://github.com/SCHT001" style="
                 text-decoration: none;
                 color: var(--secondary-color);
                 font-weight: 300;
-              "
-              >See more</a
-            ></span
-          >
-        </div>
-        <div class="projectBox">
-          <hr style="width: 100%" />
-          <div class="projectI">
-            <br />
-            <h3 style="color: var(--text-color)">1. Simple Calculator</h3>
-            <br />
-            Type: Utility <br />
-            A simple calculator that can perform simple tasks such as addiction,
-            multiplication, etc. <br />
-            <div
-              style="
+              ">See more</a></span>
+      </div>
+      <div class="projectBox">
+        <hr style="width: 100%" />
+        <div class="projectI">
+          <br />
+          <h3 style="color: var(--text-color)">1. Simple Calculator</h3>
+          <br />
+          Type: Utility <br />
+          A simple calculator that can perform simple tasks such as addiction,
+          multiplication, etc. <br />
+          <div style="
                 display: flex;
                 justify-content: space-between;
                 margin-top: 20px;
-              "
-            >
-              <span class="topics"
-                ><a href="https://scht001.github.io/Calculator/"
-                  >Try it</a
-                ></span
-              >
-              <span class="topics"
-                ><a href="https://github.com/SCHT001/Calculator"
-                  >Github</a
-                ></span
-              >
-            </div>
-          </div>
-        </div>
-        <div class="projectBox">
-          <hr style="width: 100%" />
-          <div class="projectI">
-            <br />
-            <h3 style="color: var(--text-color)">2. To do List</h3>
-            <br />
-            Type: Utility <br />
-            A simple to do list that can keep track of tasks to be performed.
-            <br />
-            <div
-              style="
-                display: flex;
-                justify-content: space-between;
-                margin-top: 20px;
-              "
-            >
-              <span class="topics"
-                ><a href="https://scht001.github.io/To-Do-List/"
-                  >Try it</a
-                ></span
-              >
-              <span class="topics"
-                ><a href="https://github.com/SCHT001/To-Do-List"
-                  >Github</a
-                ></span
-              >
-            </div>
-          </div>
-        </div>
-        <div class="projectBox">
-          <hr style="width: 100%" />
-          <div class="projectI">
-            <br />
-            <h3 style="color: var(--text-color)">3. Flip Cards</h3>
-            <br />
-            Type: Game <br />
-            A simple game to flip cards of same number. <br />
-            <div
-              style="
-                display: flex;
-                justify-content: space-between;
-                margin-top: 20px;
-              "
-            >
-              <span class="topics"
-                ><a href="https://scht001.github.io/FlipCards/">Try it</a></span
-              >
-              <span class="topics"
-                ><a href="https://github.com/SCHT001/FlipCards">Github</a></span
-              >
-            </div>
+              ">
+            <span class="topics"><a href="https://scht001.github.io/Calculator/">Try it</a></span>
+            <span class="topics"><a href="https://github.com/SCHT001/Calculator">Github</a></span>
           </div>
         </div>
       </div>
-      <!-- contacts -->
-      <div class="contact" id="contactId">
-        <hr style="margin-bottom: 50px" />
-        <span class="topics"><i class="fas fa-phone fa-xs"></i> Contact</span>
-        <div style="margin-top: 40px; font-size: 2em; color: var(--text-color)">
-          Lets work together
+      <div class="projectBox">
+        <hr style="width: 100%" />
+        <div class="projectI">
+          <br />
+          <h3 style="color: var(--text-color)">2. To do List</h3>
+          <br />
+          Type: Utility <br />
+          A simple to do list that can keep track of tasks to be performed.
+          <br />
+          <div style="
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+              ">
+            <span class="topics"><a href="https://scht001.github.io/To-Do-List/">Try it</a></span>
+            <span class="topics"><a href="https://github.com/SCHT001/To-Do-List">Github</a></span>
+          </div>
         </div>
-        <div class="contactForm" style="margin-top: 50px">
-          <form
-            action="https://formsubmit.co/sachetsubedi003@gmail.com"
-            method="POST"
-          >
-            <div>
-              <label for="Name"
-                >Name <span style="color: rgb(228, 83, 21)">*</span></label
-              >
-              <br />
-              <input type="text" name="Name" required placeholder="Your Name" />
-            </div>
-            <div>
-              <label for="Contact"
-                >Contact <span style="color: rgb(228, 83, 21)">*</span></label
-              >
-              <br />
-              <input
-                type="number"
-                name="Contact"
-                required
-                placeholder="Contact Number"
-              />
-            </div>
-            <div>
-              <label for="Email"
-                >Email <span style="color: rgb(228, 83, 21)">*</span></label
-              >
-              <br />
-              <input
-                type="email"
-                name="email"
-                required
-                placeholder="YourEmail@gmail.com"
-              />
-            </div>
-            <div>
-              <label for="Topic">Topic </label> <br />
-              <input type="text" name="Topic" placeholder="Topic" />
-            </div>
-            <div>
-              <label for="Message"
-                >Message <span style="color: rgb(228, 83, 21)">*</span></label
-              >
-              <textarea
-                name="Message"
-                cols="30"
-                rows="5"
-                placeholder="Your Message"
-                style="
+      </div>
+      <div class="projectBox">
+        <hr style="width: 100%" />
+        <div class="projectI">
+          <br />
+          <h3 style="color: var(--text-color)">3. Flip Cards</h3>
+          <br />
+          Type: Game <br />
+          A simple game to flip cards of same number. <br />
+          <div style="
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+              ">
+            <span class="topics"><a href="https://scht001.github.io/FlipCards/">Try it</a></span>
+            <span class="topics"><a href="https://github.com/SCHT001/FlipCards">Github</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contacts -->
+    <div class="contact" id="contactId">
+      <hr style="margin-bottom: 50px" />
+      <span class="topics"><i class="fas fa-phone fa-xs"></i> Contact</span>
+      <div style="margin-top: 40px; font-size: 2em; color: var(--text-color)">
+        Lets work together
+      </div>
+      <div class="contactForm" style="margin-top: 50px">
+        <form action="https://formsubmit.co/sachetsubedi003@gmail.com" method="POST">
+          <div>
+            <label for="Name">Name <span style="color: rgb(228, 83, 21)">*</span></label>
+            <br />
+            <input type="text" name="Name" required placeholder="Your Name" />
+          </div>
+          <div>
+            <label for="Contact">Contact <span style="color: rgb(228, 83, 21)">*</span></label>
+            <br />
+            <input type="number" name="Contact" required placeholder="Contact Number" />
+          </div>
+          <div>
+            <label for="Email">Email <span style="color: rgb(228, 83, 21)">*</span></label>
+            <br />
+            <input type="email" name="email" required placeholder="YourEmail@gmail.com" />
+          </div>
+          <div>
+            <label for="Topic">Topic </label> <br />
+            <input type="text" name="Topic" placeholder="Topic" />
+          </div>
+          <div>
+            <label for="Message">Message <span style="color: rgb(228, 83, 21)">*</span></label>
+            <textarea name="Message" cols="30" rows="5" placeholder="Your Message" style="
                   background-color: transparent;
                   border: none;
                   display: flex;
                   flex-direction: column;
                   color: white;
-                "
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="submitBtn">Send</button>
-          </form>
-        </div>
-      </div>
-      <div class="footer">
-        <hr style="margin-bottom: 50px" />
-        <div class="icons">
-          <a href="https://www.facebook.com/profile.php?id=100010031222014"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a href="https://www.instagram.com/sachet_____"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/sachet-subedi-801153256/"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-          <a href="https://github.com/SCHT001">
-            <i class="fa-brands fa-github"></i
-          ></a>
-          <a href="viber://add?number=9863028085">
-            <i class="fa-brands fa-viber"></i
-          ></a>
-          <a
-            href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBzBdFSwMztNzZPwKjPVHvLdWDNDJtCjNDBSgmFXmXHWJWLrtWTPmrcmTlCxqCwwFfSgrW"
-            ><i class="fas fa-light fa-envelope-circle-check"></i
-          ></a>
-        </div>
-
-        <div class="footerThemeSelector" style="margin-top: 10px">
-          <div class="themeBtn" id="themeToggle">
-            <i class="fas fa-sun"></i>
+                " required></textarea>
           </div>
-          <div class="footerThemeColor">
-            <div
-              class="limeTheme colorSets active"
-              data-color="limegreen"
-              style="background-color: limegreen"
-            ></div>
-            <br />
-            <div
-              class="redTheme colorSets"
-              data-color="red"
-              style="background-color: rgb(239, 58, 58)"
-            ></div>
-            <br />
-            <div
-              class="yellowTheme colorSets"
-              data-color="yellow"
-              style="background-color: yellow"
-            ></div>
-            <br />
-            <div
-              class="purpleTheme colorSets"
-              data-color="purple"
-              style="background-color: rgb(216, 42, 216)"
-            ></div>
-            <br />
-            <div
-              class="blueTheme colorSets"
-              data-color="blue"
-              style="background-color: rgb(26, 165, 221)"
-            ></div>
-            <br />
-          </div>
-        </div>
-        <div class="copyRight" style="text-align: center; margin-top: 20px">
-          © Sachet Subedi (2003-2023)
-        </div>
+          <button type="submit" class="submitBtn">Send</button>
+        </form>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+    <div class="footer">
+      <hr style="margin-bottom: 50px" />
+      <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100010031222014"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/sachet_____"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/sachet-subedi-801153256/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/SCHT001">
+          <i class="fa-brands fa-github"></i></a>
+        <a href="viber://add?number=9863028085">
+          <i class="fa-brands fa-viber"></i></a>
+        <a
+          href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBzBdFSwMztNzZPwKjPVHvLdWDNDJtCjNDBSgmFXmXHWJWLrtWTPmrcmTlCxqCwwFfSgrW"><i
+            class="fas fa-light fa-envelope-circle-check"></i></a>
+      </div>
+
+      <div class="footerThemeSelector" style="margin-top: 10px">
+        <div class="themeBtn" id="themeToggle">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="footerThemeColor">
+          <div class="limeTheme colorSets active" data-color="limegreen" style="background-color: limegreen"></div>
+          <br />
+          <div class="redTheme colorSets" data-color="red" style="background-color: rgb(239, 58, 58)"></div>
+          <br />
+          <div class="yellowTheme colorSets" data-color="yellow" style="background-color: yellow"></div>
+          <br />
+          <div class="purpleTheme colorSets" data-color="purple" style="background-color: rgb(216, 42, 216)"></div>
+          <br />
+          <div class="blueTheme colorSets" data-color="blue" style="background-color: rgb(26, 165, 221)"></div>
+          <br />
+        </div>
+      </div>
+      <div class="copyRight" style="text-align: center; margin-top: 20px">
+        © Sachet Subedi (2003-2023)
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
