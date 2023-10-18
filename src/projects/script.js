@@ -1,7 +1,7 @@
 const projects=[
     {
         head:"Calculator",
-        des:"Simple calculator to perform simple tasks",
+        des:"Simple calculator to perform simple tasks like addition, subtraction, reminder, etc",
         tryitLink:"https://scht001.github.io/Calculator/",
         githubLink:"https://github.com/SCHT001/Calculator",
         languages:["HTML","CSS","JavaScript"],
@@ -12,7 +12,17 @@ const projects=[
     {
         head:"To do list",
         des:"Simple to do list to organize your tasks",
-        tryitLink:"https://scht001.github.io.To-Do-List/",
+        tryitLink:"https://scht001.github.io/To-Do-List/",
+        githubLink:"https://github.com/SCHT001/To-Do-List",
+        languages:["HTML","CSS","JavaScript"],
+        category:"Utility",
+        completed:true,
+        author:"Sachet Subedi",
+    },
+    {
+        head:"Timer",
+        des:"Simple clock to check for time",
+        tryitLink:"https://scht001.github.io/To-Do-List/",
         githubLink:"https://github.com/SCHT001/To-Do-List",
         languages:["HTML","CSS","JavaScript"],
         category:"Utility",
