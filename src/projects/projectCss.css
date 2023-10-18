@@ -32,7 +32,7 @@
   margin: 0px;
   font-family: nunito sans;
   scroll-behavior: smooth;
-  font-weight: bolder;
+  font-weight: 1000;
 }
 a{
     text-decoration: none;
@@ -46,9 +46,9 @@ body{
   margin-top: 30px;
 }
 .container{
-    border: 1px solid var(--secondary-color);
     padding: 10px;
     width: 80%;
+    height: max-content;
 }
 .header{
     display: flex;
@@ -69,8 +69,7 @@ body{
 }
 .projectList{
 
-    border: 1px solid var(--secondary-color);
-    height: 60vh;
+    height: auto;
 
 }
 .projectItem{
@@ -78,6 +77,9 @@ body{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    border: 1px solid var(--secondary-color);
+    transition: height 2s;
+    height: initial;
 }
 .projectBody{
     display: flex;
@@ -89,7 +91,7 @@ body{
     flex-direction: column;
     gap: 0.5em;
 }
-.rounded a:hover{
+.projectButtons a:hover{
     background-color: var(--text-color);
     transition: 0.2s ease-in-out;
     color: var(--secondary-color);
@@ -103,4 +105,33 @@ body{
 }
 .projectDes{
     color: var(--text-color);
+}
+.expander{
+  display: flex;
+  justify-content: center;
+}
+.expander:hover{
+  color: var(--text-color);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+.expander i{
+  transition: 0.2s ease-in-out;
+}
+.expandedDes{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-color);
+  display: none;
+}
+ul{
+  list-style: none;
+}
+.languagesUsed,.category,.completed,.author{
+  color: white;
+}
+.languagesUsed li,.category li{
+  margin-left: 20px;
+  color: var(--text-color);
 }
