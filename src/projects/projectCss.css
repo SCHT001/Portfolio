@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Raleway:wght@200&display=swap');
+
+:root{
+  --primary-color:black;
+  --secondary-color:white;
+  --text-color:limegreen;
+}
+.light-theme{
+  --primary-color:rgb(231, 223, 223);
+  --secondary-color:black;
+  transition: 0.2s ease-in-out;
+}
+.dark-theme{
+  transition: 0.2s ease-in-out;
+}
+.text-blue{
+  --text-color:rgb(26, 165, 221);
+}
+
+.text-yellow{
+  --text-color:rgb(255, 255, 0);
+}
+.text-red{
+  --text-color:rgb(239, 58, 58);
+}
+.text-purple{
+  --text-color:rgb(216, 42, 216);
+}
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: nunito sans;
+  scroll-behavior: smooth;
+  font-weight: bolder;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+body{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.container{
+    border: 1px solid var(--secondary-color);
+    padding: 10px;
+    width: 80%;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+.mainBody{
+    margin-top: 20px;
+}
+.rounded{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--secondary-color);
+    border-radius: 25px;
+    padding: 5px;
+}
+.projectList{
+
+    border: 1px solid var(--secondary-color);
+    height: 60vh;
+
+}
+.projectItem{
+    margin: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.projectBody{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.projectButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.rounded a:hover{
+    background-color: var(--text-color);
+    transition: 0.2s ease-in-out;
+    color: var(--secondary-color);
+    border:1px solid var(--primary-color);
+}
+.forFlex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.projectDes{
+    color: var(--text-color);
+}
