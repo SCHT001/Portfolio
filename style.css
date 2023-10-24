@@ -97,7 +97,7 @@ body{
 }
 .topics:hover{
     background-color: var(--text-color);
-    border: none;
+    border: 1px solid var(--text-color);
     color: var(--secondary-color);
     transition: 0.25s ease-in-out;
 }
@@ -123,11 +123,16 @@ a{
 .topics a{
     color: var(--secondary-color);
 }
-input{
+.contactForm input, .contactForm textarea{
     background-color:transparent;
     color: var(--secondary-color);
-    border: none;
+    border: 0px;
+    border-bottom: 1px solid var(--secondary-color);
     font-size: 1.2em;
+    padding:5px 10px;
+}
+.contactForm input:focus{
+    outline: none;
 }
 label{
     font-size: 1.4em;
@@ -146,12 +151,14 @@ label{
     background-color: transparent;
     color: var(--text-color);
     border:1px solid var(--text-color);
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 .submitBtn:hover{
     background-color: var(--text-color);
-    border: none;
+    border: 1px solid var(--text-color);
     color: var(--secondary-color);
     transition: 0.25s ease-in-out;
 }
@@ -303,7 +310,17 @@ input[type="number"] {
     appearance: none;
     -moz-appearance: textfield;
 }
-
+.requiredDot{
+    display: flex;
+    height: 7px;
+    width: 7px;
+    background-color: red;
+    border-radius: 25px;
+}
+label{
+    display: flex; 
+    gap: 10px;
+}
 @media (max-width:600px){
     .sidebar{
         width: 0px;

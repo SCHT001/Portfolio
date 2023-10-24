@@ -244,32 +244,32 @@
       <div class="contactForm" style="margin-top: 50px">
         <form action="https://formsubmit.co/sachetsubedi003@gmail.com" method="POST">
           <div>
-            <label for="Name">Name <span style="color: rgb(228, 83, 21)">*</span></label>
+            <label for="Name">Name <span class="requiredDot"></span></label>
             <br />
-            <input type="text" name="Name" required placeholder="Your Name" />
+            <input type="text" name="Name" required  />
           </div>
           <div>
-            <label for="Contact">Contact <span style="color: rgb(228, 83, 21)">*</span></label>
+            <label for="Contact">Contact <span class="requiredDot"></span></label>
             <br />
-            <input type="number" name="Contact" required placeholder="Contact Number" />
+            <input type="number" name="Contact" required  />
           </div>
           <div>
-            <label for="Email">Email <span style="color: rgb(228, 83, 21)">*</span></label>
+            <label for="Email">Email <span class="requiredDot"></span></label>
             <br />
-            <input type="email" name="email" required placeholder="YourEmail@gmail.com" />
+            <input type="email" name="email" required  />
           </div>
           <div>
             <label for="Topic">Topic </label> <br />
-            <input type="text" name="Topic" placeholder="Topic" />
+            <input type="text" name="Topic"  />
           </div>
           <div>
-            <label for="Message">Message <span style="color: rgb(228, 83, 21)">*</span></label>
-            <textarea name="Message" cols="30" rows="5" placeholder="Your Message" style="
+            <label for="Message">Message <span class="requiredDot"></span></label>
+            <textarea name="Message" cols="20" rows="5" style="
                   background-color: transparent;
-                  border: none;
                   display: flex;
                   flex-direction: column;
                   color: white;
+                  resize: none;
                 " required></textarea>
           </div>
           <button type="submit" class="submitBtn">Send</button>
