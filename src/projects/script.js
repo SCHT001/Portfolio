@@ -23,13 +23,34 @@ const projects=[
     {
         head:"Timer",
         des:"Simple clock to check for time",
-        tryitLink:"https://scht001.github.io/To-Do-List/",
-        githubLink:"https://github.com/SCHT001/To-Do-List",
+        tryitLink:"https://scht001.github.io/Timer/",
+        githubLink:"https://github.com/SCHT001/Timer",
         languages:["HTML","CSS","JavaScript"],
         category:"Utility",
         completed:true,
         author:"Sachet Subedi",
-    }
+    },
+    {
+        head:"Simon Game",
+        des:"A game to guess the pattern ",
+        tryitLink:"https://scht001.github.io/Simon_game/",
+        githubLink:"https://github.com/SCHT001/Simon_game",
+        languages:["HTML","CSS","JavaScript"],
+        category:"Game",
+        completed:true,
+        author:"Sachet Subedi",
+    },
+    {
+        head:"Stopwatch",
+        des:"A stopwatch to start and stop time",
+        tryitLink:"https://scht001.github.io/StopWatch/",
+        githubLink:"https://github.com/SCHT001/StopWatch",
+        languages:["HTML","CSS","JavaScript"],
+        category:"Utility",
+        completed:true,
+        author:"Sachet Subedi",
+    },
+
 ];
 
 const projectList=document.getElementById('projectList');
