@@ -5,6 +5,7 @@
     --secondary-color: white;
     --text-color: limegreen;
     --box-shadow: rgba(255, 255, 255, 0.1);
+    --box-bg:rgb(31,41,55);
 }
 
 .light-theme {
@@ -12,6 +13,7 @@
     --secondary-color: rgb(43, 42, 38);
     transition: 0.2s ease-in-out;
     --box-shadow: rgba(0,0,0,0.1);
+    --box-bg:rgb(184, 184, 184);
 }
 
 .dark-theme {
