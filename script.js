@@ -29,5 +29,13 @@ themeBtn.forEach((btn)=>{
             btn.innerHTML = `<i class="fas fa-sun"></i>`;
             body.classList.replace('light-theme', 'dark-theme');
         }
+        changeCursor();
     });
 })
+
+// cursor
+
+function changeCursor(){
+    const bodyElement=document.body;
+    theme=="dark"?bodyElement.style.cursor=`url('Images/cursor-white.png'), auto`:bodyElement.style.cursor=`url('Images/cursor.png'), auto`;
+}
