@@ -211,7 +211,7 @@ label {
 }
 
 .defBoxShadow{
-    box-shadow: 4px 4px 100px 0px var(--box-shadow),-4px -4px 100px 0px var(--box-shadow);
+    box-shadow: 4px 4px 10px 0px var(--box-shadow),-4px -4px 10px 0px var(--box-shadow);
 }
 
 @media (max-width:900px) {
