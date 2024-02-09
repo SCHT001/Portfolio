@@ -12,7 +12,6 @@ colors.forEach((color) => {
             color.classList.remove('active');
         })
         e.target.classList.add('active');
-       
     })
 });
 
