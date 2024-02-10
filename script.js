@@ -36,6 +36,7 @@ themeBtn.forEach((btn) => {
 	});
 });
 
+
 // cursor
 function changeCursor() {
 	const bodyElement = document.body;
